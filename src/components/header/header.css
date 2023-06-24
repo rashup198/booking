@@ -7,6 +7,8 @@
     position: relative;
     padding: 50px;
     position: relative;
+    
+    
   }
   
   .headerContainer {
@@ -17,6 +19,7 @@
   
   .headerContainer.listMode {
     margin: 20px 0px 0px 0px;
+    padding: 0px 150px;
   }
   
   .headerList {
@@ -70,6 +73,7 @@
     width: 100%;  
     max-width: 1024px;
     color: black;
+    margin-left: 200px;
       
     
   }
@@ -96,6 +100,7 @@
   .date{
     position: absolute;
     top:50px;
+    z-index: 10;
 
   }
   .options{
@@ -108,11 +113,33 @@
     -webkit-box-shadow: 25px -15px 35px -15px rgba(0,0,0,0.64);
     -moz-box-shadow: 25px -15px 35px -15px rgba(0,0,0,0.64);
     box-shadow: 25px -15px 35px -15px rgba(0,0,0,0.64);
-    
+    z-index: 10;
   }
   .optionItem{
     width: 200px;
     display: flex;
     justify-content:space-between ;
     margin: 10px;
+  }
+
+  .optionText{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: black;
+  }
+
+  .optionCounterButton{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #0071c2;
+    color: #0071c2;
+    cursor: pointer;
+    background-color: white;
+  }
+
+  .optionCounterButton:disabled{
+
+    cursor :not-allowed;
   }
