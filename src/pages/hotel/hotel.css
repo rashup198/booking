@@ -127,11 +127,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
   }
   
   .sliderImg{
     width: 80%;
     height: 80vh;
+    user-select: none;
   }
   
   .close{
@@ -141,6 +143,7 @@
     font-size: 30px;
     color: lightgray;
     cursor: pointer;
+    user-select: none;
   }
   
   .arrow{
@@ -148,4 +151,5 @@
     font-size: 50px;
     color: lightgray;
     cursor: pointer;
+    user-select: none;
   }
