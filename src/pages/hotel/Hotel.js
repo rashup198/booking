@@ -57,7 +57,7 @@ const Hotel = () => {
   return (
     <div>
       <Navbar />
-      <Header type="List" />
+      <Header type="list" />
       <div className="hotelContainer">
         {open && (
           <div className="slider">
@@ -137,7 +137,7 @@ const Hotel = () => {
           </div>
         </div>
         <MailList />
-        <Footer></Footer>
+        <Footer />
       </div>
     </div>
   );
