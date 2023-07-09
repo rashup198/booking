@@ -9,6 +9,8 @@ import 'react-date-range/dist/theme/default.css';
 import { format } from 'date-fns';
 import { useNavigate } from 'react-router-dom';
 
+
+
 const Header = ({type}) => {
   const [openDate, setOpenDate] = useState(false);
   const [destination, setDestination] = useState("");
@@ -38,6 +40,7 @@ const Header = ({type}) => {
   const handleChange=(e)=>{
     setDestination(e.target.value)
   }
+
 
   return (
     <div>
@@ -69,10 +72,7 @@ const Header = ({type}) => {
       { type !=="List" && 
         <> <h1 className='headerTitle'>A lifetime of discount? It's Genius!</h1>
       <p className='headerDesc'>Get rewards for your travels- unlock instant savings of 10% or more with free PandeyBooking account</p>
-
-      <button className='headerBtn'>
-      Sign in / Register
-      </button>
+        
       <div className='headerSearch'>
             <div className='headerSearchItem'>
             <FontAwesomeIcon icon={faBed} className='headerIcon'/>
@@ -91,11 +91,9 @@ const Header = ({type}) => {
             className='date'
             minDate={new Date()}
             />
-            }
-           
+            }        
             </div>
-      
-      
+
             <div className='headerSearchItem'>
             <FontAwesomeIcon icon={faPerson} className='headerIcon'/>
            <span onClick={()=>setOpenOptions(!openOptions)} className='headerSearchText'>`{options.adult} adult {options.children} children {options.rooms} rooms`</span>
