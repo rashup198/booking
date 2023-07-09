@@ -19,6 +19,10 @@
 }
 .logo{
     font-weight: 500;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    user-select: none;
 
 }
 .navButton{
@@ -30,4 +34,33 @@
     text-align: center;
     cursor: pointer;
     background-color: white;
+}
+.btnLogin{
+    color: rgb(20, 15, 165);
+    background-color: #ffffff;
+    border: 1px solid white;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.navItems{
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+}
+.user{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+.user_detail{
+    font-size: 20px;
+
+}
+.user_img{
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
 }
